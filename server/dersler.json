@@ -1,0 +1,327 @@
+{
+  "dersPlani": [
+    {
+      "yariyil": 1,
+      "zorunluDersler": [
+        { "kodu": "AIB101", "adi": "Atatürk İlkeleri ve İnkılap Tarihi I", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 },
+        { "kodu": "TDB121", "adi": "Türk Dili I", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 },
+        { "kodu": "FIZ101", "adi": "Fizik I", "zorunluMu": true, "ortalama": true, "tuSaat": "3+2", "kredi": 4, "akts": 6 },
+        { "kodu": "BM107", "adi": "Elektrik Devre Temelleri", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "MAT101", "adi": "Matematik I", "zorunluMu": true, "ortalama": true, "tuSaat": "5+1", "kredi": 6, "akts": 6 },
+        { "kodu": "BM103", "adi": "Bilgisayar Mühendisliğine Giriş", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 },
+        { "kodu": "BM105", "adi": "Bilişim Teknolojileri", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 },
+        { "kodu": "BM101", "adi": "Algoritmalar ve Programlama I", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "ING101", "adi": "İngilizce I", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 }
+      ],
+      "toplam": { "kredi": 26, "akts": 30 }
+    },
+    {
+      "yariyil": 2,
+      "zorunluDersler": [
+        { "kodu": "AIB102", "adi": "Atatürk İlkeleri ve İnkılap Tarihi II", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 },
+        { "kodu": "TDB122", "adi": "Türk Dili II", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 },
+        { "kodu": "FIZ102", "adi": "Fizik II", "zorunluMu": true, "ortalama": true, "tuSaat": "3+2", "kredi": 4, "akts": 6 },
+        { "kodu": "MAT102", "adi": "Matematik II", "zorunluMu": true, "ortalama": true, "tuSaat": "5+1", "kredi": 6, "akts": 6 },
+        { "kodu": "BM102", "adi": "Algoritmalar ve Programlama II", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM104", "adi": "Web Teknolojileri", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM106", "adi": "Olasılık ve İstatistik", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "KRP102", "adi": "Kariyer Planlama", "zorunluMu": true, "ortalama": true, "tuSaat": "1+0", "kredi": 1, "akts": 2 },
+        { "kodu": "ING102", "adi": "İngilizce II", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 2 }
+      ],
+      "toplam": { "kredi": 26, "akts": 32 }
+    },
+    {
+      "yariyil": 3,
+      "zorunluDersler": [
+        { "kodu": "BM203", "adi": "Elektronik", "zorunluMu": true, "ortalama": true, "tuSaat": "3+2", "kredi": 4, "akts": 5 },
+        { "kodu": "BM213", "adi": "Lineer Cebir", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 3 },
+        { "kodu": "BM215", "adi": "Ayrık İşlemsel Yapılar", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 3 },
+        { "kodu": "BM211", "adi": "Diferansiyel Denklemler", "zorunluMu": true, "ortalama": true, "tuSaat": "4+0", "kredi": 4, "akts": 4 },
+        { "kodu": "BM212", "adi": "Mesleki İngilizce ", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM205", "adi": "Nesneye Dayalı Programlama", "zorunluMu": true, "ortalama": true, "tuSaat": "4+0", "kredi": 4, "akts": 5 },
+        { "kodu": "BM209", "adi": "Sayısal Analiz", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 3 }
+      ],
+      "secmeliDersler": [
+        { "kodu": "SECSOS3YY", "adi": "BM 3. YY Üniversite Seçmelisi", "zorunluMu": false, "ortalama": true, "tuSaat": "0+0", "kredi": 2, "akts": 3 }
+      ],
+      "secenekler": {
+        "SECSOS3YY": [
+          { "kodu": "US201", "adi": "Bilim Tarihi ve Felsefesi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US203", "adi": "Çevre ve Enerji", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US205", "adi": "Davranış Bilimine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US207", "adi": "Girişimcilik", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US209", "adi": "İletişim Tekniği", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US211", "adi": "İş Psikolojisi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US213", "adi": "İşletme Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US215", "adi": "Kültür Tarihi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US217", "adi": "Sanat Tarihi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US219", "adi": "Sivil Toplum Organizasyonları", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US221", "adi": "Uygarlık Tarihi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US225", "adi": "Girişimcilik I", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US227", "adi": "Girişimcilik II", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 }
+        ]
+      },
+      "toplam": { "kredi": 26, "akts": 30 }
+    },
+    {
+      "yariyil": 4,
+      "zorunluDersler": [
+        { "kodu": "BM204", "adi": "Bilgisayar Organizasyonu", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+        { "kodu": "BM206", "adi": "Sayısal Elektronik", "zorunluMu": true, "ortalama": true, "tuSaat": "4+1", "kredi": 4, "akts": 5 },
+        { "kodu": "BM208", "adi": "Nesneye Dayalı Analiz ve Tasarım", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM210", "adi": "Programlama Dillerinin Prensipleri", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM214", "adi": "Veri Yapıları", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 }
+
+      ],
+      "secmeliDersler": [
+        { "kodu": "SECSOS4YY", "adi": "BM 4. YY Üniversite Seçmelisi", "zorunluMu": false, "ortalama": true, "tuSaat": "0+0", "kredi": 2, "akts": 3 }
+      ],
+      "secenekler": {
+        "SECSOS4YY": [
+          { "kodu": "UNI101", "adi": "Üniversite Seçmeli", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US201", "adi": "Bilim Tarihi ve Felsefesi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US203", "adi": "Çevre ve Enerji", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US205", "adi": "Davranış Bilimine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US207", "adi": "Girişimcilik", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US209", "adi": "İletişim Tekniği", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US211", "adi": "İş Psikolojisi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US213", "adi": "İşletme Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US215", "adi": "Kültür Tarihi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US217", "adi": "Sanat Tarihi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US219", "adi": "Sivil Toplum Organizasyonları", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US221", "adi": "Uygarlık Tarihi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US225", "adi": "Girişimcilik I", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "US227", "adi": "Girişimcilik II", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 }
+        ]
+      },
+      "toplam": { "kredi": 21, "akts": 30 }
+    },
+    {
+      "yariyil": 5,
+      "zorunluDersler": [
+        { "kodu": "BM301", "adi": "Biçimsel Diller ve Soyut Makinalar", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM303", "adi": "İşaretler ve Sistemler", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+        { "kodu": "BM305", "adi": "İşletim Sistemleri", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+        { "kodu": "BM307", "adi": "Bilgisayar Ağları I", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+        { "kodu": "BM309", "adi": "Veritabanı Yönetim Sistemleri", "zorunluMu": true, "ortalama": true, "tuSaat": "4+0", "kredi": 4, "akts": 6 },
+        { "kodu": "BM399", "adi": "Yaz Dönemi Stajı I", "zorunluMu": true, "ortalama": false, "tuSaat": "0+2", "kredi": 1, "akts": 3 }
+      ],
+      "secmeliDersler": [
+        { "kodu": "SECTEK5YY", "adi": "BM 5. YY Fakülte Seçmelisi", "zorunluMu": false, "ortalama": true, "tuSaat": "0+0", "kredi": 2, "akts": 3 }
+      ],
+      "secenekler": {
+        "SECTEK5YY": [
+          { "kodu": "MS301", "adi": "Endüstri İlişkileri", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS303", "adi": "Meslek Hastalıkları", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS305", "adi": "Teknoloji Felsefesi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS307", "adi": "Mühendisler İçin Yönetim", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS309", "adi": "Mühendislik Etiği", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS311", "adi": "Kalite Yönetim Sistemleri ve Uygulaması", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS313", "adi": "Toplam Kalite Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS315", "adi": "İş Güvenliği", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS317", "adi": "İş Hukuku", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS319", "adi": "Mühendislik Ekonomisi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS321", "adi": "Bilişim Teknolojilerinde Yeni Gelişmeler", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS323", "adi": "Betik Dilleri", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS325", "adi": "Mühendisler için Çevre Bilimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS327", "adi": "Sıfır Atık Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS332", "adi": "Bilimsel Araştırma ve Rapor Yazma", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 }
+        ]
+      },
+      "toplam": { "kredi": 19, "akts": 30 }
+    },
+    {
+      "yariyil": 6,
+      "zorunluDersler": [
+        { "kodu": "BM302", "adi": "Bilgisayar Ağları II", "zorunluMu": true, "ortalama": true, "tuSaat": "4+1", "kredi": 4, "akts": 6 },
+        { "kodu": "BM304", "adi": "Mikroişlemciler", "zorunluMu": true, "ortalama": true, "tuSaat": "3+2", "kredi": 4, "akts": 6 },
+        { "kodu": "BM306", "adi": "Sistem Programlama", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 2, "akts": 5 },
+        { "kodu": "BM308", "adi": "Web Programlama", "zorunluMu": true, "ortalama": true, "tuSaat": "4+0", "kredi": 4, "akts": 6 },
+        { "kodu": "BM310", "adi": "Yazılım Mühendisliği", "zorunluMu": true, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 }
+      ],
+      "secmeliDersler": [
+        { "kodu": "SECTEK6YY", "adi": "BM 6. YY Fakülte Seçmelisi", "zorunluMu": false, "ortalama": true, "tuSaat": "0+0", "kredi": 2, "akts": 3 }
+      ],
+      "secenekler": {
+        "SECTEK6YY": [
+          { "kodu": "MS301", "adi": "Endüstri İlişkileri", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS303", "adi": "Meslek Hastalıkları", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS305", "adi": "Teknoloji Felsefesi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS307", "adi": "Mühendisler İçin Yönetim", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS309", "adi": "Mühendislik Etiği", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS311", "adi": "Kalite Yönetim Sistemleri ve Uygulaması", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS313", "adi": "Toplam Kalite Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS315", "adi": "İş Güvenliği", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS317", "adi": "İş Hukuku", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS319", "adi": "Mühendislik Ekonomisi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS321", "adi": "Bilişim Teknolojilerinde Yeni Gelişmeler", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS323", "adi": "Betik Dilleri", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS325", "adi": "Mühendisler için Çevre Bilimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS327", "adi": "Sıfır Atık Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+          { "kodu": "MS332", "adi": "Bilimsel Araştırma ve Rapor Yazma", "zorunluMu": false, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 }
+        ]
+      },
+      "toplam": { "kredi": 19, "akts": 30 }
+    },
+    {
+      "yariyil": 7,
+      "zorunluDersler": [
+        { "kodu": "BM401", "adi": "Bilgisayar Mühendisliği Proje Tasarımı", "zorunluMu": true, "ortalama": true, "tuSaat": "2+0", "kredi": 2, "akts": 3 },
+        { "kodu": "BM499", "adi": "Yaz Dönemi Stajı II", "zorunluMu": true, "ortalama": false, "tuSaat": "0+2", "kredi": 1, "akts": 2 }
+      ],
+      "secmeliDersler": [
+        { "kodu": "SECMES7YY", "adi": "BM 7. YY Bölüm Seçmelisi", "zorunluMu": false, "ortalama": true, "tuSaat": "0+0", "kredi": 15, "akts": 25 }
+      ],
+      "secenekler": {
+        "SECMES7YY": [
+          { "kodu": "BM473", "adi": "Karar Destek Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM420", "adi": "Bilgisayar Mimarileri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM421", "adi": "Bilgisayar Grafiği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM422", "adi": "Biyobilişime Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM423", "adi": "Bulanık Mantık ve Yapay Sinir Ağlarına Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM424", "adi": "Derleyici Tasarımı", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM425", "adi": "Erp Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM426", "adi": "Gerçek Zamanlı Ağ Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM427", "adi": "İnternet Mühendisliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM428", "adi": "Oyun Programlamaya Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM429", "adi": "Optimizasyon", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM430", "adi": "Proje Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM431", "adi": "Örüntü Tanıma", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM432", "adi": "Robotik", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM433", "adi": "Sayısal İşaret İşleme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM434", "adi": "Sayısal Kontrol Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM435", "adi": "Veri Madenciliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM436", "adi": "Sistem Simülasyonu", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM437", "adi": "Yapay Zeka", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM438", "adi": "Yurtdışı Staj Etkinliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM439", "adi": "Bilgisayar Görmesi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM440", "adi": "Veri Tabanı Tasarımı ve Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM441", "adi": "Bilgisayar Güvenliğine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM442", "adi": "Görsel Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM443", "adi": "Mobil Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM444", "adi": "Yazılım Tasarım Kalıpları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM445", "adi": "Java Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM447", "adi": "Sayısal Görüntü İşleme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM449", "adi": "Ağ Güvenliğine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM451", "adi": "Kontrol Sistemlerine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM453", "adi": "İçerik Yönetim Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM455", "adi": "Bulanık Mantığa Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM457", "adi": "Bilgisayar Aritmetiği ve Otomata", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM459", "adi": "Yazılım Test Mühendisliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM461", "adi": "Coğrafi Bilgi Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM463", "adi": "İleri Sistem Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM465", "adi": "Mikrodenetleyiciler ve Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM467", "adi": "Kodlama Teorisi ve Kriptografi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM469", "adi": "Makine Öğrenmesine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM470", "adi": "İleri Java Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM471", "adi": "Gömülü Sistem Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM472", "adi": "Ağ Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM474", "adi": "ERP Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM475", "adi": "Kurumsal Java", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM476", "adi": "Açık Kaynak Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM477", "adi": "Graf Teorisi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM478", "adi": "Python İle Veri Bilimine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM479", "adi": "Kompleks Ağ Analizi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM480", "adi": "Derin Öğrenme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM481", "adi": "Sanallaştırma Teknolojileri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM482", "adi": "Yazılım Gereksinimleri Mühendisliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM483", "adi": "Doğal Dil İşlemeye Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM485", "adi": "Dosya Organizasyonu", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM486", "adi": "Sayısal Sistem Tasarım", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM487", "adi": "Nesnelerin İnterneti", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM488", "adi": "Veri Analizi ve Tahminleme Yöntemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM489", "adi": "Programlanabilir Mantık Denetleyiciler", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM490", "adi": "Bilgi Güvenliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM491", "adi": "Sistem Biyolojisi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM492", "adi": "Tıbbi İstatistik ve Tıp Bilimine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM493", "adi": "Veri İletişimi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM494", "adi": "Kablosuz Haberleşme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM495", "adi": "İleri Gömülü Sistem Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM496", "adi": "Bilgi Mühendisliği ve Büyük Veriye Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "MTH401", "adi": "LLM tabanlı Soru-Cevap Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 }
+        ]
+      },
+      "toplam": { "kredi": 18, "akts": 30 }
+    },
+    {
+      "yariyil": 8,
+      "zorunluDersler": [
+        { "kodu": "BM499", "adi": "Mezuniyet Tezi", "zorunluMu": true, "ortalama": true, "tuSaat": "0+2", "kredi": 2, "akts": 5 }
+      ],
+      "secmeliDersler": [
+        { "kodu": "SECMES8YY", "adi": "BM 8. YY Bölüm Seçmelisi", "zorunluMu": false, "ortalama": true, "tuSaat": "0+0", "kredi": 15, "akts": 25 }
+      ],
+      "secenekler": {
+        "SECMES8YY": [
+          { "kodu": "BM473", "adi": "Karar Destek Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM404", "adi": "İşletmede Mesleki Eğitim", "zorunluMu": false, "ortalama": true, "tuSaat": "5+0", "kredi": 5, "akts": 25 },
+          { "kodu": "BM420", "adi": "Bilgisayar Mimarileri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM421", "adi": "Bilgisayar Grafiği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM422", "adi": "Biyobilişime Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM423", "adi": "Bulanık Mantık ve Yapay Sinir Ağlarına Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM424", "adi": "Derleyici Tasarımı", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM425", "adi": "Erp Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM426", "adi": "Gerçek Zamanlı Ağ Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM427", "adi": "İnternet Mühendisliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM428", "adi": "Oyun Programlamaya Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM429", "adi": "Optimizasyon", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM430", "adi": "Proje Yönetimi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM431", "adi": "Örüntü Tanıma", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM432", "adi": "Robotik", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM433", "adi": "Sayısal İşaret İşleme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM434", "adi": "Sayısal Kontrol Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM435", "adi": "Veri Madenciliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM436", "adi": "Sistem Simülasyonu", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM437", "adi": "Yapay Zeka", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM438", "adi": "Yurtdışı Staj Etkinliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM439", "adi": "Bilgisayar Görmesi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM440", "adi": "Veri Tabanı Tasarımı ve Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM441", "adi": "Bilgisayar Güvenliğine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM442", "adi": "Görsel Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM443", "adi": "Mobil Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM444", "adi": "Yazılım Tasarım Kalıpları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+1", "kredi": 3, "akts": 5 },
+          { "kodu": "BM445", "adi": "Java Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM447", "adi": "Sayısal Görüntü İşleme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM449", "adi": "Ağ Güvenliğine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM451", "adi": "Kontrol Sistemlerine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM453", "adi": "İçerik Yönetim Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM455", "adi": "Bulanık Mantığa Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM457", "adi": "Bilgisayar Aritmetiği ve Otomata", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM459", "adi": "Yazılım Test Mühendisliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM461", "adi": "Coğrafi Bilgi Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM463", "adi": "İleri Sistem Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM465", "adi": "Mikrodenetleyiciler ve Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM467", "adi": "Kodlama Teorisi ve Kriptografi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM469", "adi": "Makine Öğrenmesine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM470", "adi": "İleri Java Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM471", "adi": "Gömülü Sistem Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM472", "adi": "Ağ Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 4 },
+          { "kodu": "BM474", "adi": "ERP Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM475", "adi": "Kurumsal Java", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM476", "adi": "Açık Kaynak Programlama", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM477", "adi": "Graf Teorisi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM478", "adi": "Python İle Veri Bilimine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM479", "adi": "Kompleks Ağ Analizi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM480", "adi": "Derin Öğrenme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM481", "adi": "Sanallaştırma Teknolojileri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM482", "adi": "Yazılım Gereksinimleri Mühendisliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM483", "adi": "Doğal Dil İşlemeye Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM485", "adi": "Dosya Organizasyonu", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM486", "adi": "Sayısal Sistem Tasarım", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM487", "adi": "Nesnelerin İnterneti", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM488", "adi": "Veri Analizi ve Tahminleme Yöntemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM489", "adi": "Programlanabilir Mantık Denetleyiciler", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM490", "adi": "Bilgi Güvenliği", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM491", "adi": "Sistem Biyolojisi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM492", "adi": "Tıbbi İstatistik ve Tıp Bilimine Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM493", "adi": "Veri İletişimi", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM494", "adi": "Kablosuz Haberleşme", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM495", "adi": "İleri Gömülü Sistem Uygulamaları", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "BM496", "adi": "Bilgi Mühendisliği ve Büyük Veriye Giriş", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 },
+          { "kodu": "MTH401", "adi": "LLM tabanlı Soru-Cevap Sistemleri", "zorunluMu": false, "ortalama": true, "tuSaat": "3+0", "kredi": 3, "akts": 5 }
+        ]
+      },
+      "toplam": { "kredi": 17, "akts": 30 }
+    }
+  ]
+}

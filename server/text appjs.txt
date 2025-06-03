@@ -1,0 +1,79 @@
+from flask import Flask, request, jsonify, send_from_directory
+import os
+import fitz  # PyMuPDF
+import openai
+import re
+import json
+
+app = Flask(__name__, static_folder='public', static_url_path='')
+
+# OpenAI API anahtarınızı buraya yazın (güvenlik için .env gibi yöntemler önerilir)
+openai.api_key = 'sk-proj-...'  # <-- Gerçek anahtar burada olacak
+
+# Uploads klasörü yoksa oluştur
+os.makedirs('uploads', exist_ok=True)
+
+# JSON'dan ders planını yükle (sunucu tarafında)
+with open('dersler.json', encoding='utf-8') as f:
+    all_courses = json.load(f)
+
+# PDF'den metin çıkarma
+def extract_text_from_pdf(pdf_path):
+    doc = fitz.open(pdf_path)
+    text = ""
+    for page in doc:
+        text += page.get_text()
+    return text
+
+# PDF metninden ders kodlarını çıkarma
+def extract_courses_from_text(text):
+    course_codes = re.findall(r'[A-Z]{2,4}\s?\d{3}', text)
+    return list(set([code.replace(" ", "") for code in course_codes]))
+
+# Eksik zorunlu dersleri hesapla
+def calculate_missing_courses(all_courses, taken_courses):
+    required_courses = [
+        course["ders_kodu"].replace(" ", "")
+        for course in all_courses
+        if course["ders_turu"].lower() == "zorunlu"
+    ]
+    missing = [code for code in required_courses if code not in taken_courses]
+    return missing
+
+@app.route('/analyze', methods=['POST'])
+def analyze_graduation():
+    transcript_file = request.files['transcript']
+
+    transcript_path = os.path.join('uploads', transcript_file.filename)
+    transcript_file.save(transcript_path)
+
+    # PDF'ten metin çıkar
+    transcript_text = extract_text_from_pdf(transcript_path)
+    taken_courses = extract_courses_from_text(transcript_text)
+    missing_courses = calculate_missing_courses(all_courses, taken_courses)
+
+    # LLM analiz (isteğe bağlı)
+    prompt = f"Öğrenci transkripti:\n\n{transcript_text}\n\nBu bilgilere göre öğrencinin genel durumu nedir?"
+    llm_response = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        max_tokens=150
+    )
+    llm_comment = llm_response.choices[0].text.strip()
+
+    result = {
+        "graduation_status": "Mezun olabilir." if not missing_courses else "Eksik dersler var.",
+        "missing_courses": missing_courses,
+        "course_list": taken_courses,
+        "llm_comment": llm_comment
+    }
+
+    return jsonify(result)
+
+# Dersler JSON'u frontend tarafından alınabilsin diye:
+@app.route('/dersler.json')
+def serve_course_plan():
+    return send_from_directory('.', 'dersler.json')
+
+if __name__ == '__main__':
+    app.run(debug=True)

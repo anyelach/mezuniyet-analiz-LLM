@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mezuniyet Analizi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Üstten başlasın */
+            min-height: 100vh;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: calc(100% - 22px); /* Padding'i hesaba kat */
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result-section { /* ID olarak ayarlandı */
+            margin-top: 30px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            min-height: 150px; /* Sonuç alanı için minimum yükseklik */
+        }
+        .result-item {
+            margin-bottom: 10px;
+        }
+        .result-item strong {
+            color: #333;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.1em;
+            color: #007bff;
+        }
+        #error-message {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .status-icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+        .success-icon {
+            color: #28a745;
+        }
+        .error-icon {
+            color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mezuniyet Analizi</h1>
+
+        <div class="form-section">
+            <div class="form-group">
+                <label for="transcript">Transkript Dosyası:</label>
+                <input type="file" id="transcript" accept=".pdf">
+            </div>
+            <button onclick="analyzeTranscript()">Analiz Et</button>
+        </div>
+
+        <div id="loading">Analiz ediliyor... Lütfen bekleyiniz.</div>
+        <div id="error-message"></div>
+
+        <div id="result-section">
+            <div class="result-item">
+                <strong>Mezuniyet Durumu:</strong> <span id="mezuniyet-durumu"></span>
+            </div>
+            
+            <div class="result-item">
+                <strong>LLM Yorumu:</strong> <span id="llm-yorum" style="white-space: pre-wrap;"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function analyzeTranscript() {
+            const fileInput = document.getElementById('transcript');
+            const file = fileInput.files[0];
+            const loadingDiv = document.getElementById('loading');
+            const errorMessageDiv = document.getElementById('error-message');
+            const mezuniyetDurumuSpan = document.getElementById('mezuniyet-durumu');
+            const llmYorumSpan = document.getElementById('llm-yorum');
+
+            errorMessageDiv.textContent = '';
+            mezuniyetDurumuSpan.innerHTML = ''; 
+            llmYorumSpan.textContent = ''; 
+            loadingDiv.style.display = 'block';
+
+            if (!file) {
+                errorMessageDiv.textContent = 'Lütfen bir PDF dosyası seçin.';
+                loadingDiv.style.display = 'none';
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('transcript', file);
+
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    // Mezuniyet Durumu için icon ve metin ayrıştırma
+                    let statusIcon = '';
+                    let displayMezuniyetText = data.mezuniyet_durumu;
+                    if (data.mezuniyet_durumu.includes("✅")) {
+                        statusIcon = '<span class="status-icon success-icon">✅</span>';
+                        displayMezuniyetText = displayMezuniyetText.replace('✅ ', '');
+                    } else if (data.mezuniyet_durumu.includes("❌")) {
+                        statusIcon = '<span class="status-icon error-icon">❌</span>';
+                        displayMezuniyetText = displayMezuniyetText.replace('❌ ', '');
+                    } else if (data.mezuniyet_durumu.includes("⁉️")) { // Hata durumu için
+                        statusIcon = '<span class="status-icon error-icon">⁉️</span>';
+                        displayMezuniyetText = displayMezuniyetText.replace('⁉️ ', '');
+                    }
+                    mezuniyetDurumuSpan.innerHTML = statusIcon + displayMezuniyetText;
+
+                    llmYorumSpan.textContent = data.llm_yorum;
+
+                } else {
+                    errorMessageDiv.textContent = data.error || 'Analiz sırasında bir hata oluştu.';
+                }
+            } catch (error) {
+                console.error('Hata:', error);
+                errorMessageDiv.textContent = 'Sunucuyla iletişim kurulamadı. Lütfen ağ bağlantınızı kontrol edin veya daha sonra tekrar deneyin.';
+            } finally {
+                loadingDiv.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
