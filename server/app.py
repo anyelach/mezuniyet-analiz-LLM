@@ -188,14 +188,7 @@ def mezuniyet_hesapla(dersler, all_courses_json):
             secmeli_dersler_sayisi += 1
             alinan_bolum_secmeli_kodlari.append(d_kodu)
     
-    if secmeli_dersler_sayisi < 10:
-        alinan_secmeli_str = f" ({secmeli_dersler_sayisi} tane var"
-        if alinan_bolum_secmeli_kodlari:
-            alinan_secmeli_str += f": {', '.join(sorted(set(alinan_bolum_secmeli_kodlari)))}"
-        else:
-            alinan_secmeli_str += ", hiç bölüm seçmeli alınmamış"
-        alinan_secmeli_str += ")"
-        hatalar.append(f"Yeterli sayıda (10 adet) BM4xx veya MTH4xx kodlu bölüm seçmeli dersi yok.{alinan_secmeli_str}")
+       
 
     # 6. Yaz Stajı Kontrolü - Düzeltildi
     yaz_staji = [d for d in dersler if d[0] in ("BM399", "BM499")]
