@@ -303,7 +303,7 @@ Mezun olamazsın:
 - Toplam AKTS yetersiz (Şu anki AKTS: 212).
 - Yaz stajı derslerinden (BM399 veya BM499) birinin notu YZ (Yetersiz).
 - Başarısız ders(ler): BM309, BM499
-- Yeterli sayıda (10 adet) BM4xx veya MTH4xx kodlu bölüm seçmeli dersi yok. (Şu an 6 tane var: BM401, BM430, BM455, BM469, BM477, BM493)
+- 5 adet daha seçmeli alınmalıdır. Yeterli sayıda (10 adet) seçmeliniz bulunmuyor. 1 adet kaldığınız seçmeli yerine de seçmeli ders alınmalıdır. 
 - Eksik zorunlu dersler: AIB101, TDB121, FIZ111, BM107, MAT111, BM103, BM115, BM111, ING101, AIB102, TDB122, FIZ112, MAT112, BM112, BM114, BM106, KRP102, ING102, BM203, BM213, BM217, BM221, BM223, BM225, BM229, BM204, BM206, BM208, BM210, BM214, BM216, BM301, BM303, BM305, BM307, BM309, BM397, BM302, BM304, BM306, BM308, BM310, BM401, BM497, BM498
 """
             )
